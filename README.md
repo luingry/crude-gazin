@@ -10,7 +10,7 @@ O arquivo chamado **generate_db.sql**, localizado na raiz do projeto, deve ser e
 Acessando o caminho **server/db** encontra-se o arquivo **dbconnection.js**.
 Neste arquivo encontra-se as configurações de conexão com o banco de dados, onde o valor da chave **user** e **password** deve ser alterado de acordo com as configurações do banco de dados da sua máquina.
 
-Rode o comando abaixo para instalar as dependências:
+Com node e npm instalado na máquina, rode o comando abaixo para instalar as dependências:
 ```
 npm i
 npm run dev
