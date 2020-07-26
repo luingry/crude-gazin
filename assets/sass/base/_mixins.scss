@@ -1,0 +1,26 @@
+@function em($pixels, $context: $font-size) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1em;
+}
+
+@mixin placeholder {
+    &.placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-webkit-input-placeholder { @content }
+}
+
+@mixin gutter($size: 40) {
+	margin-left: em(-$size);
+	margin-right: em(-$size);
+	[class*="col-"] {
+		padding-left: em($size);
+		padding-right: em($size);
+	}
+}

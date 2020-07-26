@@ -1,0 +1,159 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CRUDE - Developers</title>
+	<link rel="stylesheet" href="./assets/css/main.css"></link>
+	<link rel="stylesheet" href="./assets/css/fancybox.min.css"></link>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+
+				<h1 class="title">Omni CRUDE</h1>
+
+				<div class="form-wrapper">
+					<!-- <form class="search-form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="pesquisar" placeholder="Digita um termo para pesquisar">
+						</div>
+						<button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Pesquisar</button>
+					</form> -->
+
+					<div class="more-commands">
+						<button class="btn btn-primary" data-fancybox href="#form-cadastro"><i class="fas fa-plus-circle"></i> Cadastrar</button>
+						<button class="btn btn-primary" reload><i class="fas fa-redo-alt"></i> Recarregar</button>
+					</div>
+				</div>
+
+				<table class="table-devs table">
+					<thead>
+						<tr>
+							<th scope="col">Nome</th>
+							<th scope="col">Sexo</th>
+							<th scope="col">Idade</th>
+							<th scope="col">Hobby</th>
+							<th scope="col">Data de nascimento</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+
+				<div class="bottom-commands">
+					<nav class="pagination-wrapper">
+						<ul class="pagination">
+						</ul>
+					</nav>
+					<div class="input-group list-qty">
+						<label for="">Quantidade registros:</label>
+						<select name="qty" id="qty">
+							<option value="2">2</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="50">50</option>
+						</select>
+					</div>
+				</div>
+
+				<form action="" id="form-cadastro" style="display: none;">
+					<h2 class="title">Cadastro de desenvolvedor</h2>
+					<h3 class="subtitle">Preencha os campos abaixo para registrar um desenvolvedor.</h3>
+					<div class="form-group">
+						<label for="nome">Nome: </label>
+						<input type="text" class="form-control" id="nome" placeholder="Qual é seu nome?" required>
+					</div>
+					<div class="form-group">
+						<label>Sexo: </label>
+						<div class="form-group">
+							<div class="radio-group">
+								<label for="sexo-m">
+									<input type="radio" id="sexo-m" name="sexo" value="m" required>
+									M
+								</label>
+							</div>
+							<div class="radio-group">
+								<label for="sexo-f">
+									<input type="radio" id="sexo-f" name="sexo" value="f" required>
+									F
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="idade">Idade: </label>
+						<input type="number" class="form-control" id="idade" placeholder="Quantos anos você tem?" required>
+					</div>
+					<div class="form-group">
+						<label for="hobby">Hobby: </label>
+						<input type="text" class="form-control" id="hobby" placeholder="Qual seu hobby?" required>
+					</div>
+					<div class="form-group">
+						<label for="nascimento">Data de nascimento: </label>
+						<input type="date" class="form-control" id="nascimento" placeholder="Que dia você nasceu?" required>
+					</div>
+					<button class="btn btn-primary w-100" type="submit">Cadastrar</button>
+				</form>
+
+				<form action="" id="form-editar" style="display: none;">
+					<h2 class="title">Editar cadastro do desenvolvedor</h2>
+					<input type="hidden" id="entry-id">
+					<div class="form-group">
+						<label for="nome">Nome: </label>
+						<input type="text" class="form-control" id="nome" placeholder="Qual é seu nome?" required>
+					</div>
+					<div class="form-group">
+						<label>Sexo: </label>
+						<div class="form-group">
+							<div class="radio-group">
+								<label for="sexo-m">
+									<input type="radio" id="sexo-m" name="sexo" value="m" required>
+									M
+								</label>
+							</div>
+							<div class="radio-group">
+								<label for="sexo-f">
+									<input type="radio" id="sexo-f" name="sexo" value="f" required>
+									F
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="idade">Idade: </label>
+						<input type="number" class="form-control" id="idade" placeholder="Quantos anos você tem?" required>
+					</div>
+					<div class="form-group">
+						<label for="hobby">Hobby: </label>
+						<input type="text" class="form-control" id="hobby" placeholder="Qual seu hobby?" required>
+					</div>
+					<div class="form-group">
+						<label for="nascimento">Data de nascimento: </label>
+						<input type="date" class="form-control" id="nascimento" placeholder="Que dia você nasceu?" required>
+					</div>
+					<button class="btn btn-primary w-100" type="submit">Confirmar edição</button>
+				</form>
+
+				<div id="form-remover" style="display: none;">
+					<h2 class="title">Tem certeza que deseja remover?</h2>
+					<div class="button-group">
+						<a href="#" class="btn btn-primary">Voltar</a>
+						<a href="#" class="btn btn-danger" data-remover>Remover</a>
+					</div>
+				</div>
+
+				<div id="success" style="display: none;">
+					<h2 class="title">Operação bem sucedida!</h2>
+					<a href="#" onclick="$.fancybox.close()" class="btn btn-primary w-100">Fechar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/jquery.fancybox.min.js"></script>
+	<script src="./assets/js/axios.min.js"></script>
+	<script src="./assets/js/init.js"></script>
+</body>
+</html>

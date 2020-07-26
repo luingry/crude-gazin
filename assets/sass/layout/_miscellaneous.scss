@@ -1,0 +1,77 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size;
+}
+
+body {
+} 
+
+#application {
+    max-width: 1920px; 
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0 40px;
+
+    @include media-breakpoint-down(md) { 
+        padding: 0 40px;
+    }
+}
+
+.container {
+    padding: 0 40px;
+
+    @include media-breakpoint-down(md) {
+        max-width: 100%;
+        padding: 0 40px;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: $body-color;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+a,
+a:hover,
+a:focus,
+input,
+button,
+textarea,
+select {
+    text-decoration: none;
+    outline: none !important;
+}
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+//Classes utilitarias
+.full-vh {
+    min-height: 100vh;
+}

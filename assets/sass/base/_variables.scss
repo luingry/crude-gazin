@@ -1,0 +1,66 @@
+// Typography
+$font-family-base: Roboto;
+$font-family-alternative: Roboto;
+$font-size: 16px;
+$font-weight-normal: 400;
+$line-height-base: 1.6;
+$body-color: #736B76;
+
+$headings-font-family: $font-family-alternative;
+$headings-font-weight: 700;
+$headings-line-height: 1.1;
+$headings-margin-bottom: 0;
+
+$h1-font-size: 1rem * 2.5;
+$h2-font-size: 1rem * 2;
+$h3-font-size: 1rem * 1.75;
+$h4-font-size: 1rem * 1.5;
+$h5-font-size: 1rem * 1.25;
+$h6-font-size: 1rem;
+
+// Colors
+$color-brand: #EA3235;
+$blue:    #2BABEE;
+$indigo:  #6610f2;
+$purple:  #8268B1;
+$pink:    #FF5087;
+$red:     #dc3545;
+$orange:  #E16519;
+$yellow:  #FDB32B;
+$green:   #85CF39;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+$gray:    #979797;
+
+//Project colors
+$gray-lightier: #808080;
+$gray-light: #E2E2E2;
+$gray-mid: #242424;
+$rust-dark: #5E5649;
+$rust-light: #ADA18C;
+$cream-mid: #E0E0C2;
+$cream-light: #F7F8ED;
+$cream-lightier: #D0C7AB;
+
+
+// Grids
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+// Containers
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+) !default;
+
+// Miscellaneous
+$easing: cubic-bezier(.62,.28,.23,.99);
