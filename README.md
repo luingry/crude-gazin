@@ -19,4 +19,4 @@ Feito isto o servidor deverá estar rodando.
 Acesse o arquivo **index.html** que se encontra na raiz do projeto para visualizar o client da API.
 
 ## **Observações**
-- Os erros retornados pela API são logados no console do navegador e no terminal.
+- Os erros retornados pela API são logados no console do navegador.
