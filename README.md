@@ -13,7 +13,7 @@ Neste arquivo encontra-se as configurações de conexão com o banco de dados, o
 Com node e npm instalado na máquina, rode o comando abaixo para instalar as dependências:
 ```
 npm i
-npm run dev
+npm run server
 ```
 Feito isto o servidor deverá estar rodando. 
 Acesse o arquivo **index.html** que se encontra na raiz do projeto para visualizar o client da API.
